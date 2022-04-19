@@ -4,6 +4,8 @@
              x:Class="W11A_FigmaProject.EnrollPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="workshopTitle" Text=""/>
+            <Label x:Name="workshopDate" Text=""/>
             <Entry Placeholder="Name"/>
             <Entry Placeholder="Email"/>
             <StackLayout Orientation="Horizontal">

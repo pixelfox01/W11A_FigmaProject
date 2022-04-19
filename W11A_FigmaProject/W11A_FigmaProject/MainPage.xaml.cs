@@ -13,6 +13,12 @@ namespace W11A_FigmaProject
         public MainPage()
         {
             InitializeComponent();
+            WorkshopPicker.ItemsSource = WorkshopRepository.Workshops;
+        }
+
+        private void enrolmentFormButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EnrollPage(WorkshopPicker.SelectedItem as Workshop));
         }
     }
 }

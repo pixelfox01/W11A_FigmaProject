@@ -4,7 +4,8 @@
              x:Class="W11A_FigmaProject.MainPage">
 
     <StackLayout VerticalOptions="CenterAndExpand">
-        <Picker x:Name="WorkshopPicker" Title="Select a Workshop"/>
+        <Picker x:Name="WorkshopPicker" Title="Select a Workshop" ItemDisplayBinding="{Binding Title}"/>
+        <Button x:Name="enrolmentFormButton" Text="Enrolment Form" Clicked="enrolmentFormButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>

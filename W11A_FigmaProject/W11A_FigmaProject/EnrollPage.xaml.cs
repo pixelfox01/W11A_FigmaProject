@@ -15,6 +15,8 @@ namespace W11A_FigmaProject
         public EnrollPage(Workshop workshop)
         {
             InitializeComponent();
+            workshopTitle.Text = workshop.Title;
+            workshopDate.Text = workshop.Date.ToString();
         }
     }
 }
