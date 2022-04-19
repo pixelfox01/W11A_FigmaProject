@@ -17,7 +17,27 @@ namespace W11A_FigmaProject
 
         static WorkshopRepository()
         {
-            _workshops = new List<Workshop>();
+            _workshops = new List<Workshop>
+            {
+                new Workshop
+                {Date = new DateTime(2012, 02, 12),
+                 Title = "games"
+                },
+                 new Workshop
+                {Date = new DateTime(2012, 02, 13),
+                 Title = "movies"
+                },
+                  new Workshop
+                {Date = new DateTime(2012, 02, 14),
+                 Title = "music"
+                },
+                   new Workshop
+                {Date = new DateTime(2012, 02, 15),
+                 Title = "shit"
+                },
+
+
+            };
         }
 
     }
