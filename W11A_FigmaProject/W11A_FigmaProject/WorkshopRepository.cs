@@ -4,12 +4,10 @@ using System.Text;
 
 namespace W11A_FigmaProject
 {
-    public class WorkshopRepository
+    public static class WorkshopRepository
     {
-
-        private List<Workshop> _workshops;
-
-        public List<Workshop> Workshops
+        private static List<Workshop> _workshops;
+        public static List<Workshop> Workshops
         {
             get
             {
@@ -17,7 +15,7 @@ namespace W11A_FigmaProject
             }
         }
 
-        public WorkshopRepository()
+        static WorkshopRepository()
         {
             _workshops = new List<Workshop>();
         }
