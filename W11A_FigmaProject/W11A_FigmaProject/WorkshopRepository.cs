@@ -9,15 +9,18 @@ namespace W11A_FigmaProject
 
         private List<Workshop> _workshops;
 
+        public List<Workshop> Workshops
+        {
+            get
+            {
+                return _workshops;
+            }
+        }
+
         public WorkshopRepository()
         {
             _workshops = new List<Workshop>();
         }
-
-        //public List<Workshop> GetWorkshops()
-        //{
-            
-        //}
 
     }
 }

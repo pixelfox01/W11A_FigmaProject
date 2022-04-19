@@ -13,6 +13,7 @@ namespace W11A_FigmaProject
         public MainPage()
         {
             InitializeComponent();
+            WorkshopPicker.ItemsSource = 
         }
     }
 }
